@@ -11,3 +11,7 @@ function variables() {
     userdisplay = (userinput);
     document.getElementById('result').innerHTML = `${userdisplay}` ;
     }
+
+function redirect() {
+    window.location.href = "file:///C:/Users/Samardh/Desktop/Health%20App/code.html" ;
+}
