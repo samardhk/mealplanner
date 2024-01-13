@@ -3,9 +3,6 @@ function variables() {
     let userinput;
     userinput = document.getElementById("user").value;
 
-    let passinput;
-    passinput = document.getElementById("pass").value;
-
     let GFG_Var;
  
     userdisplay = (userinput);
@@ -13,5 +10,13 @@ function variables() {
     }
 
 function redirect() {
-    window.location.href = "file:///C:/Users/Samardh/Desktop/Health%20App/code.html" ;
+    
+    var username = document.getElementById("user").value;
+    localStorage.setItem("user",username);
+    window.location.href = "code.html";
+}
+
+function showusername()  {
+    var username = localStorage.getItem("user")
+    document.getElementById("displayuser").textContent = username;
 }

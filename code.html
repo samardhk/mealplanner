@@ -5,6 +5,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <h1>Welcome <span id="displayuser"></span>!</h1><br>
     <h2>BMI Calculator</h2>
     <form id="bmiForm">
         <label for="feet">Height:</label>
@@ -28,5 +29,13 @@
     <p id="result"></p>
 
     <script src="calculation.js"></script>
+    
+    <script>
+        window.onload = function() {
+            showusername();
+
+        };
+    </script>
+    <script src="variables.js"></script>
 </body>
 </html>
