@@ -1,9 +1,20 @@
+const centimeterperinch = 2.54;
+const kilosperpound = 0.453592;
+const dailycalgainloss = 500
+const activityleveloptions = {
+    sed: 1.2,
+    light: 1.375,
+    mod: 1.55,
+    very: 1.725,
+    sup: 1.9,
+
+}
 
 function calculateBMI() {
-    var feet = document.getElementById('feet').value;
-    var inches = document.getElementById('inches').value || 0; // default to 0 if inches are not provided
-    var pounds = document.getElementById('pounds').value;
-    var age = document.getElementById('age').value;
+    const feet = document.getElementById('feet').value;
+    const inches = document.getElementById('inches').value || 0; // default to 0 if inches are not provided
+    const pounds = document.getElementById('pounds').value;
+    const age = document.getElementById('age').value;
     if (!feet || !pounds || !age) {
         alert("Please complete all fields.");
         return; 
@@ -37,50 +48,41 @@ function TDEE() {
 
     var inches = document.getElementById('inches').value || 0; 
     var totalInches = (+feet * 12) + +inches; 
-    var heightInCM = totalInches * 2.54; 
-    var weightInKilos = pounds * 0.453592;
+    const heightInCM = totalInches * centimeterperinch; 
+    const weightInKilos = pounds * kilosperpound;
     var bmr = (10 * weightInKilos) + (6.25 * heightInCM) - (5 * age) + 5;
 
-    var sed = 1.2;
-    var light = 1.375;
-    var mod = 1.55;
-    var very = 1.725;
-    var sup = 1.9;
-
-    
-
-    
     var tdee;
     if (updatedvalue=="Sedentary" && fitnessvalue =="lose") {
-        var tdee = (bmr * sed) - 500;
+        var tdee = (bmr * activityleveloptions.sed) - dailycalgainloss;
     } else if (updatedvalue=="Sedentary" && fitnessvalue =="gain") {
-        var tdee = (bmr * sed) + 500;
+        var tdee = (bmr * activityleveloptions.sed) + dailycalgainloss;
     } else if (updatedvalue=="Sedentary" && fitnessvalue =="maintain") {
-        var tdee = (bmr * sed);
+        var tdee = (bmr * activityleveloptions.sed);
     } else if (updatedvalue=="Lightly Active" && fitnessvalue =="lose") {
-        var tdee = (bmr * light) - 500;
+        var tdee = (bmr * activityleveloptions.light) - dailycalgainloss;
     } else if (updatedvalue=="Lightly Active" && fitnessvalue =="gain") {
-        var tdee = (bmr * light) + 500;
+        var tdee = (bmr * activityleveloptions.light) + dailycalgainloss;
     } else if (updatedvalue=="Lightly Active" && fitnessvalue =="maintain") {
-        var tdee = (bmr * light);
+        var tdee = (bmr * activityleveloptions.light);
     } else if (updatedvalue=="Moderately Active" && fitnessvalue =="lose") {
-        var tdee = (bmr * mod)-500;
+        var tdee = (bmr * activityleveloptions.mod)- dailycalgainloss;
     } else if (updatedvalue=="Moderately Active" && fitnessvalue =="gain") {
-        var tdee = (bmr * mod)+ 500;    
+        var tdee = (bmr * activityleveloptions.mod)+ dailycalgainloss;    
     } else if (updatedvalue=="Moderately Active" && fitnessvalue =="maintain") {
-        var tdee = (bmr * mod);  
+        var tdee = (bmr * activityleveloptions.mod);  
     } else if (updatedvalue=="Very Active" && fitnessvalue =="lose") {
-        var tdee = (bmr * very) - 500;
+        var tdee = (bmr * activityleveloptions.very) - dailycalgainloss;
     } else if (updatedvalue=="Very Active" && fitnessvalue =="gain") {
-        var tdee = (bmr * very) + 500;
+        var tdee = (bmr * activityleveloptions.very) + dailycalgainloss;
     } else if (updatedvalue=="Very Active" && fitnessvalue =="maintain") {
-        var tdee = (bmr * very);
+        var tdee = (bmr * activityleveloptions.very);
     } else if (updatedvalue=="Super Active" && fitnessvalue =="lose") {
-        var tdee = (bmr * sup) - 500;
+        var tdee = (bmr * activityleveloptions.sup) - dailycalgainloss;
     } else if (updatedvalue=="Super Active" && fitnessvalue =="gain") {
-        var tdee = (bmr * sup) + 500;
+        var tdee = (bmr * activityleveloptions.sup) + dailycalgainloss;
     } else if (updatedvalue=="Super Active" && fitnessvalue =="maintain") {
-        var tdee = (bmr * sup);
+        var tdee = (bmr * activityleveloptions.sup);
     }
     tdee = tdee.toFixed();
     document.getElementById('result2').innerHTML = `Your estimated caloric intake is ${tdee} calories per day`;
