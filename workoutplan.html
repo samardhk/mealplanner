@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> My Workout</title>
+</head>
+<body>
+    <h1>Your Personalized Workout Plan</h1>
+    <div id="workoutPlan"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const workoutPlanElement = document.getElementById('workoutPlan');
+            const userworkout = localStorage.getItem('userWorkout');
+
+            const workoutDetails = {
+                Bodybuilding: "Bodybuilding: Focus on heavy weights and low reps. Example: 4 sets of Bench Press, Squats, and Deadlifts.",
+                HIIT: "HIIT: High Intensity Interval Training. Example: 30 seconds of sprinting followed by 30 seconds of walking for 15 minutes.",
+                YogaPilates: "Yoga & Pilates: Combine flexibility, core strength, and relaxation. Example: 45-minute session incorporating both Yoga poses and Pilates exercises.",
+                CrossFit: "CrossFit: Varied functional movements performed at high intensity. Example: A mix of Olympic lifting, cardio, and bodyweight exercises.",
+                StrengthTraining: "Strength Training: Increase muscular strength through weight-bearing exercises. Example: 3 sets of 8-12 reps of squats, bench presses, and deadlifts.",
+                FunctionalTraining: "Functional Training: Exercises that improve daily movement skills. Example: Kettlebell swings, medicine ball throws, and balance training."
+            };
+
+            // Display the selected workout plan or a default message
+            if (workoutDetails[userworkout]) {
+                workoutPlanElement.innerHTML = `<h2>${userworkout}</h2><p>${workoutDetails[userworkout]}</p>`;
+            }
+        });
+    </script>
+</body>
+</html>
