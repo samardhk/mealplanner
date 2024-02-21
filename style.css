@@ -1,18 +1,60 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
 
-
-form {
+ul{
+    margin: 0;
+}
+.maintitle{
     background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-image: url(images/header.jpeg);
+    background-size: cover;
+    
 }
 
-label, input, select {
-    margin-bottom: 10px;
+.nav li {
+    display: inline;
 }
 
-#result {
-    margin-top: 20px;
-    font-weight: bold;
+.nav a {
+    display: inline-block;
+    padding: 0.5em;
+    color: black;
+    
 }
 
+.nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid grey;
+}
+.nav a:hover {
+    background-color: grey;
+}
+
+.login {
+    font-size: 16px ;
+    background-color: rgb(0, 200, 255);
+    padding: 10px 32px;
+    margin: auto;
+    color: black
+
+
+}
+
+.userinput {
+    text-align: center;
+    
+}
+
+.user {
+    font-size: 16px ;
+    padding: 10px 32px;
+}
+
+.pass {
+    font-size: 16px ;
+    padding: 10px 32px;
+}

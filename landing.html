@@ -2,18 +2,33 @@
 <html>
     <head>
         <title>MealPlanner Pro</title>  
+        <link rel="stylesheet" href="style.css">
     </head>
+    <body>
+    <header class = "maintitle">
+        <nav class="nav">
+            <ul>
+                <li> <a>HOME</a></li>
+                <li> <a>START MY JOURNEY</a></li>
+                <li> <a>ABOUT</a></li>
+
+            </ul>
+
+        </nav>
+    <h1>Welcome to MealPlanner Pro</h1>
     
 
-    <h1>Welcome to MealPlanner Pro</h1>
-    <form>
+    </header>
+    <div class="userinput">
+    <form> 
         <label for="user">Username:</label><br>
-        <input type="text" id="user"><br>
+        <input type="text" id="user" class="user"><br>
         <label for="pass">Password:</label><br>
-        <input type="password" id="pass"><br>
-        <input type="button" value="Submit" onclick="redirect()">  
+        <input type="password" id="pass" class="pass"><br><br>
+        <input type="button" value="Log In"  class="login" onclick="redirect()">  
     </form>
-
+    </div>
     <p id="result"></p>
     <script src="variables.js"></script>
+    </body>
 </html>

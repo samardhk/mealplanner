@@ -13,17 +13,57 @@
             const userworkout = localStorage.getItem('userWorkout');
 
             const workoutDetails = {
-                Bodybuilding: "Bodybuilding: Focus on heavy weights and low reps. Example: 4 sets of Bench Press, Squats, and Deadlifts.",
-                HIIT: "HIIT: High Intensity Interval Training. Example: 30 seconds of sprinting followed by 30 seconds of walking for 15 minutes.",
-                YogaPilates: "Yoga & Pilates: Combine flexibility, core strength, and relaxation. Example: 45-minute session incorporating both Yoga poses and Pilates exercises.",
-                CrossFit: "CrossFit: Varied functional movements performed at high intensity. Example: A mix of Olympic lifting, cardio, and bodyweight exercises.",
-                StrengthTraining: "Strength Training: Increase muscular strength through weight-bearing exercises. Example: 3 sets of 8-12 reps of squats, bench presses, and deadlifts.",
-                FunctionalTraining: "Functional Training: Exercises that improve daily movement skills. Example: Kettlebell swings, medicine ball throws, and balance training."
-            };
+    Bodybuilding: 'Bodybuilding Regimen<br>' +
+        'Frequency: 5-6 days per week, each day focusing on a different muscle group.<br>' +
+        'Day 1: Chest (Bench press, Incline dumbbell press, Cable flyes)<br>' +
+        'Day 2: Back (Deadlifts, Lat pulldowns, Bent-over rows)<br>' +
+        'Day 3: Legs (Squats, Leg press, Lunges, Calf raises)<br>' +
+        'Day 4: Shoulders (Overhead press, Lateral raises, Front raises)<br>' +
+        'Day 5: Arms (Bicep curls, Tricep pushdowns, Hammer curls)<br>' +
+        'Day 6: Rest or light cardio and stretching.<br>' +
+        'Sets/Reps: 3-4 sets of 8-12 reps for each exercise.',
 
-            // Display the selected workout plan or a default message
+    HIIT: 'HIIT Regimen<br>' +
+        'Frequency: 3-4 days per week, 20-30 minutes per session.<br>' +
+        "Sample Workout:<br>" +
+        'Warm-up: 5 minutes of light cardio.<br>' +
+        'Interval circuit: 30 seconds of high-intensity exercise (e.g., burpees, sprinting, high knees) followed by 30 seconds of rest or low-intensity exercise (e.g., walking, light jogging). Repeat for 20-30 minutes.<br>' +
+        'Cool down: 5 minutes of stretching.',
+
+    YogaPilates: 'Yoga & Pilates Regimen<br>' +
+        'Frequency: 3-5 sessions per week, mixing different styles and focuses.<br>' +
+        'Yoga Session: Include a mix of Vinyasa for flow and movement, Hatha for foundational poses and alignment, and Yin for deep stretch and relaxation.<br>' +
+        'Pilates Session: Focus on core strengthening, posture alignment, and flexibility exercises. Include mat exercises like the Hundred, Teaser, and Plank variations.',
+
+    CrossFit: 'CrossFit Regimen<br>' +
+        'Frequency: 4-5 days per week, with varied workouts each day.<br>' +
+       'Sample Workout:<br>' +
+        'Day 1: AMRAP (As Many Rounds As Possible) in 20 minutes: 5 pull-ups, 10 push-ups, 15 squats.<br>' +
+        'Day 2: For time: 400m run, 21 kettlebell swings, 12 pull-ups, repeat 3 rounds.<br>' +
+        'Day 3: Rest or active recovery.<br>' +
+        'Day 4: Strength day focusing on Olympic lifts (e.g., Clean & Jerk, Snatch).<br>' +
+        'Day 5: High-intensity interval training with a mix of rowing, burpees, and box jumps.',
+
+    StrengthTraining: 'Strength Training Regimen<br>' +
+        'Frequency: 3-4 days per week, focusing on compound exercises.<br>' +
+        'Workout:<br>' +
+        'Day 1: Upper body (Bench press, Rows, Overhead press, Pull-ups)<br>' +
+        'Day 2: Lower body (Squats, Deadlifts, Lunges)<br>' +
+        'Day 3: Rest or active recovery.<br>' +
+        'Day 4: Full body (Deadlifts, Push-ups, Rows, Squats)<br>' +
+        'Sets/Reps: 3-5 sets of 5-8 reps for each exercise.',
+
+    FunctionalTraining: 'Functional Training Regimen<br>' +
+        'Frequency: 3-4 days per week, incorporating exercises that mimic everyday movements.<br>' +
+        'Workout:<br>' +
+        'Circuit of kettlebell swings, medicine ball throws, box jumps, farmer\'s walks, and plank variations.<br>' +
+        'Perform each exercise for 45 seconds, followed by 15 seconds rest, completing 3-4 rounds.',
+};
+
+
+
             if (workoutDetails[userworkout]) {
-                workoutPlanElement.innerHTML = `<h2>${userworkout}</h2><p>${workoutDetails[userworkout]}</p>`;
+                workoutPlanElement.innerHTML = `<h2>${userworkout} Regimen</h2><p>${workoutDetails[userworkout]}</p>`;
             }
         });
     </script>
