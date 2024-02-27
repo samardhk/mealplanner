@@ -58,3 +58,89 @@ ul{
     font-size: 16px ;
     padding: 10px 32px;
 }
+
+.bmi {
+    font-size: 16px ;
+    background-color: rgb(0, 200, 255);
+    padding: 10px 32px;
+    margin: auto;
+    color: black
+
+}
+
+.calories {
+
+
+    font-size: 16px ;
+    background-color: rgb(0, 200, 255);
+    padding: 10px 32px;
+    margin: auto;
+    color: black
+}
+
+.fitness {
+
+    font-size: 16px ;
+    background-color: rgb(0, 200, 255);
+    padding: 10px 32px;
+    margin: auto;
+    color: black
+}
+
+.loginborder {
+    margin: 0;
+    background-color: white;
+    background-image: url(images/header.jpeg);
+    background-size: cover;
+    
+}
+
+.mainhello {
+
+    margin: 0;
+}
+
+.workoutback {
+    margin: 0;
+    background-color: white;
+    background-image: url(images/header.jpeg);
+    background-size: cover;
+    
+}
+
+.bigtitle {
+
+    margin: 0;
+}
+
+.getresults {
+
+    font-size: 16px ;
+    background-color: rgb(0, 200, 255);
+    padding: 10px 32px;
+    margin: auto;
+    color: black
+}
+
+.nextworkout {
+    font-size: 16px ;
+    background-color: rgb(0, 200, 255);
+    padding: 10px 32px;
+    margin: auto;
+    color: black
+
+}
+
+.showworkout {
+    margin: 0;
+    background-color: white;
+    background-image: url(images/header.jpeg);
+    background-size: cover;
+    padding-bottom: 30px;
+    
+
+}
+
+.lastone {
+    margin: 0;
+}

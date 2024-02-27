@@ -2,14 +2,18 @@
 <html>
 <head>
     <title> Personalize Your Workout</title> 
-</head>
+    <link rel="stylesheet"  href="style.css">
+    </head>
 <body>
-<h1>
+<header class="workoutback">
+<h1 class="bigtitle">
 Start Your Fitness Journey Today
 </h1>
 <h3>
 Fill out this form for your own Personal Workout Tailored to You!
 </h3>
+</header>
+
 <form>
     <p> Question 1: What is your primary fitness goal?</p>
     <input type="radio" id="muscle" name="fitnessgoal" value="muscle">
@@ -64,12 +68,12 @@ Fill out this form for your own Personal Workout Tailored to You!
     <label for="shared">A sense of community and shared goals</label><br>
     
     <br>
-    <input type="button" value="Get My Results" onclick="userpersonal()">
+    <input type="button" value="Get My Results" class="getresults"onclick="userpersonal()">
 </form>
 
 <p id="myworkout"></p>
 
-<input type="button" id="sick" value="Take Me To My Personalized Workout" onclick="nextredirect2()" style="visibility:hidden;">
+<input type="button" id="sick" value="Take Me To My Personalized Workout" class="nextworkout" onclick="nextredirect2()" style="visibility:hidden;">
 
 <script src="variables.js"></script>
 </body>
