@@ -138,9 +138,40 @@ ul{
     background-size: cover;
     padding-bottom: 30px;
     
-
+}
+.showworkout h1{
+   
 }
 
-.lastone {
+.personalized {
     margin: 0;
+    padding-left: 50px;
+    
+    
+}
+
+.nav2 li {
+    display: inline;
+}
+
+.nav2 a {
+    display: inline-block;
+    padding: 0.5em;
+    color: black;
+    
+}
+
+.nav2 {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid grey;
+}
+.nav2 a:hover {
+    background-color: grey;
+}
+
+#workoutPlan {
+
+    padding-left:50px;
 }
