@@ -2,11 +2,16 @@
 <html>
 <head>
     <title>Calculation Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet"  href="style.css">
 </head>
 <body>
-    <h1>Welcome <span id="displayuser"></span>!</h1><br>
+    <header class = "loginborder">
+    <h1 class="mainhello">Welcome <span id="displayuser"></span>!</h1><br>
     <h2>Give Us Some Quick Information to Help Us Cater to Your Needs!</h2>
+
+    </header>
+    
+    
     <form id="bmiForm">
         <label for="feet">Height:</label>
         <input type="number" id="feet" placeholder="Feet" required> 
@@ -40,8 +45,9 @@
             <option value="maintain">Maintain Weight</option>
         </select><br><br>
 
-        <input type="button" value="Calculate BMI" onclick="calculateBMI()">
-        <input type="button" value="Calculate Your Needed Calories" onclick="TDEE()">
+        <input type="button" value="Calculate BMI" class="bmi" onclick="calculateBMI()">
+        <input type="button" value="Calculate Your Needed Calories" class ="calories" onclick="TDEE()"><br><br>
+        <input type="button" value="Start Your Fitness Journey!" class="fitness" onclick="nextredirect()">
     </form>
     <p id="result"></p>
     <p id="result2"></p>

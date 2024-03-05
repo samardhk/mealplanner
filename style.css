@@ -1,18 +1,177 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
 
-
-form {
+ul{
+    margin: 0;
+}
+.maintitle{
     background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-image: url(images/header.jpeg);
+    background-size: cover;
+    
 }
 
-label, input, select {
-    margin-bottom: 10px;
+.nav li {
+    display: inline;
 }
 
-#result {
-    margin-top: 20px;
-    font-weight: bold;
+.nav a {
+    display: inline-block;
+    padding: 0.5em;
+    color: black;
+    
 }
 
+.nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid grey;
+}
+.nav a:hover {
+    background-color: grey;
+}
+
+.login {
+    font-size: 16px ;
+    background-color: rgb(0, 200, 255);
+    padding: 10px 32px;
+    margin: auto;
+    color: black
+
+
+}
+
+.userinput {
+    text-align: center;
+    
+}
+
+.user {
+    font-size: 16px ;
+    padding: 10px 32px;
+}
+
+.pass {
+    font-size: 16px ;
+    padding: 10px 32px;
+}
+
+.bmi {
+    font-size: 16px ;
+    background-color: rgb(0, 200, 255);
+    padding: 10px 32px;
+    margin: auto;
+    color: black
+
+}
+
+.calories {
+
+
+    font-size: 16px ;
+    background-color: rgb(0, 200, 255);
+    padding: 10px 32px;
+    margin: auto;
+    color: black
+}
+
+.fitness {
+
+    font-size: 16px ;
+    background-color: rgb(0, 200, 255);
+    padding: 10px 32px;
+    margin: auto;
+    color: black
+}
+
+.loginborder {
+    margin: 0;
+    background-color: white;
+    background-image: url(images/header.jpeg);
+    background-size: cover;
+    
+}
+
+.mainhello {
+
+    margin: 0;
+}
+
+.workoutback {
+    margin: 0;
+    background-color: white;
+    background-image: url(images/header.jpeg);
+    background-size: cover;
+    
+}
+
+.bigtitle {
+
+    margin: 0;
+}
+
+.getresults {
+
+    font-size: 16px ;
+    background-color: rgb(0, 200, 255);
+    padding: 10px 32px;
+    margin: auto;
+    color: black
+}
+
+.nextworkout {
+    font-size: 16px ;
+    background-color: rgb(0, 200, 255);
+    padding: 10px 32px;
+    margin: auto;
+    color: black
+
+}
+
+.showworkout {
+    margin: 0;
+    background-color: white;
+    background-image: url(images/header.jpeg);
+    background-size: cover;
+    padding-bottom: 30px;
+    
+}
+.showworkout h1{
+   
+}
+
+.personalized {
+    margin: 0;
+    padding-left: 50px;
+    
+    
+}
+
+.nav2 li {
+    display: inline;
+}
+
+.nav2 a {
+    display: inline-block;
+    padding: 0.5em;
+    color: black;
+    
+}
+
+.nav2 {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid grey;
+}
+.nav2 a:hover {
+    background-color: grey;
+}
+
+#workoutPlan {
+
+    padding-left:50px;
+}

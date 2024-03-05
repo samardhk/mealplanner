@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Personalize Your Workout</title> 
+    <link rel="stylesheet"  href="style.css">
+    </head>
+<body>
+<header class="workoutback">
+<h1 class="bigtitle">
+Start Your Fitness Journey Today
+</h1>
+<h3>
+Fill out this form for your own Personal Workout Tailored to You!
+</h3>
+</header>
+
+<form>
+    <p> Question 1: What is your primary fitness goal?</p>
+    <input type="radio" id="muscle" name="fitnessgoal" value="muscle">
+    <label for="muscle">Increase Muscle Size and strength</label><br>
+    <input type="radio" id="cardiovascular" name="fitnessgoal" value="cardiovascular">
+    <label for="cardiovascular">Improve cardiovascular health and endurance</label><br>
+    <input type="radio" id="flexibility" name="fitnessgoal" value="flexibility">
+    <label for="flexibility">Enhance flexibility and mental well-being</label><br>
+    <input type="radio" id="functional" name="fitnessgoal" value="functional">
+    <label for="functional">Achieve a functional and balanced physique</label><br>
+    <input type="radio" id="maximize" name="fitnessgoal" value="maximize">
+    <label for="maximize">Maximize fitness in a short amount of time</label><br>
+    
+    <p>Question 2: How do you prefer to work out?</p>
+    <input type="radio" id="community" name="preference" value="community">
+    <label for="community">In a community setting with group classes</label><br>
+    <input type="radio" id="alone" name="preference" value="alone">
+    <label for="alone">Alone or with minimal interaction, focusing on my routine.</label><br>
+    <input type="radio" id="environment" name="preference" value="environment">
+    <label for="environment">In a flexible environment, sometimes at home, sometimes in a class.</label><br>
+    <input type="radio" id="outdoors" name="preference" value="outdoors">
+    <label for="outdoors">Outdoors or with minimal equipment, focusing on natural movements.</label><br>
+    
+
+    <p>Question 3: How much time can you dedicate to working out each week?</p>
+    <input type="radio" id="lthree" name="hours" value="lthree">
+    <label for="lthree">Less than 3 hours</label><br>
+    <input type="radio" id="bthree" name="hours" value="bthree">
+    <label for="bthree">3 to 5 hours</label><br>
+    <input type="radio" id="mthree" name="hours" value="mthree">
+    <label for="mthree">More than 5 hours</label><br>
+    
+
+    
+    <p>Question 4: What kind of workout intensity do you prefer?</p>
+    <input type="radio" id="high" name="intensity" value="high">
+    <label for="high">High intensity, short duration</label><br>
+    <input type="radio" id="moderate" name="intensity" value="moderate">
+    <label for="moderate">Moderate intensity, medium duration</label><br>
+    <input type="radio" id="low" name="intensity" value="low">
+    <label for="low">Low intensity, focusing on slow and controlled movements</label><br>
+    
+
+    <p>Question 5: What motivates you to keep up with your fitness routine?</p>
+    <input type="radio" id="visible" name="motivation" value="visible">
+    <label for="visible">Visible results and progress in physical appearance</label><br>
+    <input type="radio" id="healthier" name="motivation" value="healthier">
+    <label for="healthier">Feeling healthier and more energetic</label><br>
+    <input type="radio" id="enjoyment" name="motivation" value="enjoyment">
+    <label for="enjoyment">The enjoyment of the activity itself, regardless of results</label><br>
+    <input type="radio" id="shared" name="motivation" value="shared">
+    <label for="shared">A sense of community and shared goals</label><br>
+    
+    <br>
+    <input type="button" value="Get My Results" class="getresults"onclick="userpersonal()">
+</form>
+
+<p id="myworkout"></p>
+
+<input type="button" id="sick" value="Take Me To My Personalized Workout" class="nextworkout" onclick="nextredirect2()" style="visibility:hidden;">
+
+<script src="variables.js"></script>
+</body>
+
+</html>
